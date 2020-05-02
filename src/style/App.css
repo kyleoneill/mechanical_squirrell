@@ -1,0 +1,134 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+body {
+  --stripe: #cfd8dc;
+  --bg: #e1e1e1;
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
+}
+
+.App {
+  text-align: center;
+  background: white;
+  margin-top: 100px;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  border-style: solid;
+  border-color: #eee;
+  padding: 50px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.NavBar {
+  margin: 20px;
+}
+
+h3 {
+  text-align: center;
+  color: #1c1c1c;
+
+  font-family: proxima-nova;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.6em;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  margin: 1em 0 .3em;
+  white-space: pre-wrap;
+}
+
+p {
+  font-family: proxima-nova;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.8em;
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  margin: 0 0 1.8em;
+
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+p > a {
+  text-decoration: none;
+  color: gray;
+}
+
+.TwitchArtSection button, .navbar button {
+  background: none;
+  font-family: proxima-nova;
+  font-size: 16px;
+  text-size-adjust: auto;
+  border: none;
+  padding: 7px;
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.TwitchArtSection button.selected, .navbar button.selected {
+  color: black;
+}
+
+.TwitchArtSection button:hover, .navbar button:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 25px;
+  height: 2px;
+  color: #eee;
+  background-color: #eee;
+  border-style: none;
+  border-width: 0;
+  border: none;
+  display: block;
+  overflow: hidden;
+}
+
+.navbar > * {
+  padding: 7px;
+}
+
+.NavBar > div > div{
+  margin: 40px;
+}
+
+.socialMediaLinks > a {
+  padding: 7px;
+}
