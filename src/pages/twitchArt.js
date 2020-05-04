@@ -9,6 +9,35 @@ const artEnum = {
     EMOTES: 'Emotes',
     MISC: 'Misc'
 }
+//need to add wolfey and syaxx
+const offlineScreens = [
+    require("../assets/art/offline/mechanicalsquirrel_offline.png"),
+    require("../assets/art/offline/laikadoggo_offline.png"),
+    require("../assets/art/offline/andrevv_offline.png")
+];
+//ask emily whats missing
+const banners = [
+    require("../assets/art/banner/andrevv_banner.png")
+];
+//ask emily whats missing
+const layouts = [
+    require(`../assets/art/layout/andrevv_discord.png`),
+    require(`../assets/art/layout/andrevv_tf2.png`),
+    require(`../assets/art/layout/andrevv_twitter.png`),
+    require(`../assets/art/layout/andrevv_youtube.png`)
+];
+//need to add wolfey
+const emotes = [
+
+];
+//what else?
+const misc = [
+    require(`../assets/art/misc/misc_ace.png`),
+    require(`../assets/art/misc/misc_dwight.png`),
+    require(`../assets/art/misc/misc_hag.png`),
+    require(`../assets/art/misc/misc_myers.png`),
+    require(`../assets/art/misc/misc_wow_1.png`)
+];
 
 class TwitchArt extends React.Component {
     constructor(props) {
@@ -39,35 +68,27 @@ class TwitchArt extends React.Component {
                 </Navbar>
                 {this.state.artVal === artEnum.OFFLINE && 
                     <div className={this.state.artVal}>
-                        <img src={require(`../assets/art/offline/andrevv_offline.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/offline/mechanicalsquirrel_offline.png`)} alt={this.state.artVal} />
+                        {offlineScreens.map(i => <img src={i} alt={this.state.artVal} />)}
                     </div>
                 }
                 {this.state.artVal === artEnum.BANNER && 
                     <div className={this.state.artVal}>
-                        <img src={require(`../assets/art/banner/andrevv_banner.png`)} alt={this.state.artVal} />
+                        {banners.map(i => <img src={i} alt={this.state.artVal} />)}
                     </div>
                 }
                 {this.state.artVal === artEnum.LAYOUT && 
                     <div className={this.state.artVal}>
-                        <img src={require(`../assets/art/layout/andrevv_discord.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/layout/andrevv_tf2.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/layout/andrevv_twitter.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/layout/andrevv_youtube.png`)} alt={this.state.artVal} />
+                        {layouts.map(i => <img src={i} alt={this.state.artVal} />)}
                     </div>
                 }
                 {this.state.artVal === artEnum.EMOTES && 
                     <div className={this.state.artVal}>
-                        <p>This is a debug string</p>
+                        {emotes.map(i => <img src={i} alt={this.state.artVal} />)}
                     </div>
                 }
                 {this.state.artVal === artEnum.MISC && 
                     <div className={this.state.artVal}>
-                        <img src={require(`../assets/art/misc/misc_ace.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/misc/misc_dwight.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/misc/misc_hag.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/misc/misc_myers.png`)} alt={this.state.artVal} />
-                        <img src={require(`../assets/art/misc/misc_wow_1.png`)} alt={this.state.artVal} />
+                        {misc.map(i => <img src={i} alt={this.state.artVal} />)}
                     </div>
                 }
             </div>
